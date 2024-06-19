@@ -1,3 +1,73 @@
-<section>
-    <h1>Experience</h1>
+---
+import Works from "./icons/Works.astro";
+import Study from "./icons/Study.astro";
+import SocBio from "./icons/SocBio.astro";
+import UTN from "./icons/UTN.astro";
+---
+
+<section class="w-full max-w-2xl">
+    <h2 class="font-semibold text-lg balanced">Experiencia</h2>
+    <div class="flex  mt-4">
+        <div class="flex flex-col max-w-[324px]">
+            <h3 class="flex">
+                <Works />
+                <span class="ml-2">Trabajo</span>
+            </h3>
+            <ol class="space-y-4 mt-4">
+                <li class="flex gap-4">
+                    <SocBio />
+                    <dl class="flex flex-auto flex-wrap gap-x-2">
+                        <dt class="sr-only">Empresa</dt>
+                        <dd class="text-sm font-medium ww-full">Sociedad de bioquímicos</dd>
+                        <dt class="sr-only">Rol</dt>
+                        <dd class="text-xs max-w-[60%] font-light">Desarrollador Full Stack</dd>
+                        <dt class="sr-only">Date</dt>
+                        <dd class="text-xs font-light">
+                            <time datetime="2020">2020</time>
+                            <span>-</span>
+                            <time datetime="2021">2021</time>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="flex gap-4">
+                    <SocBio />
+                    <dl class="flex flex-auto flex-wrap gap-x-2">
+                        <dt class="sr-only">Empresa</dt>
+                        <dd class="text-sm font-medium w-full">Droguería Biomedic</dd>
+                        <dt class="sr-only">Rol</dt>
+                        <dd class="text-xs max-w-[60%] font-light">Freelance Full Stack</dd>
+                        <dt class="sr-only">Date</dt>
+                        <dd class="text-xs font-light">
+                            <time datetime="2022">2022</time>
+                            <span>-</span>
+                            <time datetime="2024">Presente</time>
+                        </dd>
+                    </dl>
+                </li>
+            </ol>
+        </div>
+        <div class="flex flex-col max-w-[324px]">
+            <h3 class="flex">
+                <Study />
+                <span class="ml-2">Estudio</span>
+            </h3>
+            <ol class="space-y-4 mt-4">
+                <li class="flex gap-4">
+                    <UTN />
+                    <dl class="flex flex-auto flex-wrap gap-x-2">
+                        <dt class="sr-only">Empresa</dt>
+                        <dd class="text-sm font-medium ww-full">Universidad Técnologica Nacional</dd>
+                        <dt class="sr-only">Rol</dt>
+                        <dd class="text-xs max-w-[60%] font-light">Ingeniería en Sistemas</dd>
+                        <dt class="sr-only">Date</dt>
+                        <dd class="text-xs font-light">
+                            <time datetime="2020">2020</time>
+                            <span>-</span>
+                            <time datetime="2024">Presente</time>
+                        </dd>
+                    </dl>
+                </li>
+            </ol>
+        </div>
+    </div>
 </section>
